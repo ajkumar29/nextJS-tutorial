@@ -39,5 +39,17 @@ export async function getStaticProps() {
     props: {
       meetups: DUMMY_MEETUPS,
     },
+    revalidate: 10,
   };
 }
+
+// export async function getServerSideProps(context) {
+//   const req = context.req; //only have access to these in getserversideprops
+//   const res = context.res;
+
+//   return {
+//     props: {
+//       meetups: DUMMY_MEETUPS,
+//     },
+//   };
+// }
