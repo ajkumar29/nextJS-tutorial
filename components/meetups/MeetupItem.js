@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 
 export default function MeetupItem({ id, address, image, title }) {
   const router = useRouter();
+  console.log(id);
 
   function showDetailsHandler() {
     router.push("/" + id);
